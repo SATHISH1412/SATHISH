@@ -33,31 +33,31 @@ project_description = "Description of the project."
 # Display selected page content
 if selected_page == "Profile":
     st.title("My Professional Profile")
-    st.markdown(f"## <span style='color:blue'>{full_name}</span>", unsafe_allow_html=True)
-    st.write(f"**<span style='color:green'>Job Title:</span>** {job_title}")
-    st.write(f"**<span style='color:red'>Email:</span>** {email}")
-    st.write(f"**<span style='color:orange'>Phone:</span>** {phone}")
-    st.write(f"**<span style='color:purple'>LinkedIn:</span>** {linkedin}")
-    st.write(f"**<span style='color:brown'>GitHub:</span>** {github}")
-    st.markdown("### <span style='color:darkblue'>Summary</span>", unsafe_allow_html=True)
+    st.write(f"# {full_name}")
+    st.write(f"**Job Title:** :blue[{job_title}]")
+    st.write(f"**Email:** {email}")
+    st.write(f"**Phone:** {phone}")
+    st.write(f"**LinkedIn:** {linkedin}")
+    st.write(f"**GitHub:** {github}")
+    st.write("## Summary")
     st.write(summary)
 
 elif selected_page == "Experience":
     st.title("Experience")
-    st.write(f"**<span style='color:green'>{exp_job_title}</span>**")
-    st.write(f"*<span style='color:orange'>{exp_company}</span>* - <span style='color:purple'>{exp_date}</span>")
+    st.write(f"**{exp_job_title}**")
+    st.write(f"*{exp_company}* - {exp_date}")
     st.write(exp_description)
 
 elif selected_page == "Education":
     st.title("Education")
-    st.write(f"**<span style='color:green'>{edu_degree}</span>**")
-    st.write(f"*<span style='color:orange'>{edu_school}</span>* - <span style='color:purple'>{edu_completion_date}</span>")
+    st.write(f"**{edu_degree}**")
+    st.write(f"*{edu_school}* - {edu_completion_date}")
 
 elif selected_page == "Skills":
     st.title("Skills")
-    st.write(", ".join([f"<span style='color:{color}'>{skill}</span>" for skill, color in zip(skills, ['blue', 'green', 'red'])]))
+    st.write(", ".join(skills))
 
 elif selected_page == "Projects":
     st.title("Projects")
-    st.write(f"**<span style='color:green'>{project_name}</span>**")
-    st.write(project_description, unsafe_allow_html=True)
+    st.write(f"**{project_name}**")
+    st.write(project_description)

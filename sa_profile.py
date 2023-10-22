@@ -4,18 +4,21 @@ import streamlit as st
 selected_page = st.sidebar.radio("Navigation", ["Profile", "Experience", "Education", "Skills", "Projects"])
 
 # Personal and professional information
-full_name = "Your Full Name"
-job_title = "Your Job Title"
-email = "your.email@example.com"
-phone = "123-456-7890"
-linkedin = "[Your LinkedIn Profile](https://www.linkedin.com/in/yourprofile/)"
-github = "[Your GitHub Profile](https://github.com/yourprofile)"
-summary = "A brief summary about yourself."
+full_name = "Sathish Kumar Rajedran"
+job_title = "Sr Developer - I"
+email = "sathish121393@gmail.com"
+phone = "+91 90 4326 1993"
+linkedin = "[Your LinkedIn Profile](https://www.linkedin.com/in/nexs/)"
+github = "[Your GitHub Profile](https://github.com/SATHISH1412)"
+summary = (f"I am a Senior Developer with expertise in the Amazon Web Services cloud, \n 
+           using the CDK, Python, and CFT to construct infrastructure at various levels, 
+           as well as additional DevOps technologies such as Gitlab CICD, ArgoCD, Splunk,
+           Dynatrace, OpenShift, and so on....As well as the development of streamlit apps.")
 
 # Experience section
-exp_job_title = "Job Title"
-exp_company = "Company Name"
-exp_date = "Month Year - Month Year"
+exp_job_title = "Senior Developer - I"
+exp_company = "Delta Air Lines"
+exp_date = "04 April - Present"
 exp_description = "Description of your role and responsibilities."
 
 # Education section

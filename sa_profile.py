@@ -1,75 +1,63 @@
 import streamlit as st
 
-# Streamlit app title and description
-st.title("Personal Professional Profile")
+# Sidebar navigation
+selected_page = st.sidebar.radio("Navigation", ["Profile", "Experience", "Education", "Skills", "Projects"])
 
-# User input fields
-name = st.text_input("Full Name")
-job_title = st.text_input("Job Title")
-email = st.text_input("Email Address")
-phone = st.text_input("Phone Number")
-linkedin = st.text_input("LinkedIn Profile (optional)")
-github = st.text_input("GitHub Profile (optional)")
-summary = st.text_area("Professional Summary")
+# Personal and professional information
+full_name = "Your Full Name"
+job_title = "Your Job Title"
+email = "your.email@example.com"
+phone = "123-456-7890"
+linkedin = "[Your LinkedIn Profile](https://www.linkedin.com/in/yourprofile/)"
+github = "[Your GitHub Profile](https://github.com/yourprofile)"
+summary = "A brief summary about yourself."
 
 # Experience section
-st.header("Experience")
-exp_job_title = st.text_input("Job Title New")
-exp_company = st.text_input("Company")
-exp_start_date = st.date_input("Start Date")
-exp_end_date = st.date_input("End Date")
-exp_description = st.text_area("Job Description")
+exp_job_title = "Job Title"
+exp_company = "Company Name"
+exp_date = "Month Year - Month Year"
+exp_description = "Description of your role and responsibilities."
 
 # Education section
-st.header("Education")
-edu_degree = st.text_input("Degree")
-edu_school = st.text_input("School/University")
-edu_completion_date = st.date_input("Completion Date")
+edu_degree = "Degree"
+edu_school = "School/University Name"
+edu_completion_date = "Year of Completion"
 
 # Skills section
-st.header("Skills")
-skills = st.text_area("Skills (comma-separated)")
+skills = ["Skill 1", "Skill 2", "Skill 3"]  # List of your skills
 
 # Projects section
-st.header("Projects")
-project_name = st.text_input("Project Name")
-project_description = st.text_area("Project Description")
+project_name = "Project Name"
+project_description = "Description of the project."
 
-# Display user input
-if st.button("Generate Profile"):
-    st.write(f"# {name}")
+# Display selected page content
+if selected_page == "Profile":
+    st.title("My Professional Profile")
+    st.write(f"# {full_name}")
     st.write(f"**Job Title:** {job_title}")
     st.write(f"**Email:** {email}")
     st.write(f"**Phone:** {phone}")
-    if linkedin:
-        st.write(f"**LinkedIn:** [{linkedin}](https://www.linkedin.com/in/{linkedin}/)")
-    if github:
-        st.write(f"**GitHub:** [{github}](https://github.com/{github}/)")
-    if summary:
-        st.write("## Summary")
-        st.write(summary)
+    st.write(f"**LinkedIn:** {linkedin}")
+    st.write(f"**GitHub:** {github}")
+    st.write("## Summary")
+    st.write(summary)
 
-    # Experience section
-    if exp_job_title and exp_company and exp_start_date and exp_end_date and exp_description:
-        st.write("## Experience")
-        st.write(f"**{exp_job_title}**")
-        st.write(f"*{exp_company}* - {exp_start_date.strftime('%b %Y')} to {exp_end_date.strftime('%b %Y')}")
-        st.write(exp_description)
+elif selected_page == "Experience":
+    st.title("Experience")
+    st.write(f"**{exp_job_title}**")
+    st.write(f"*{exp_company}* - {exp_date}")
+    st.write(exp_description)
 
-    # Education section
-    if edu_degree and edu_school and edu_completion_date:
-        st.write("## Education")
-        st.write(f"**{edu_degree}**")
-        st.write(f"*{edu_school}* - {edu_completion_date.strftime('%Y')}")
+elif selected_page == "Education":
+    st.title("Education")
+    st.write(f"**{edu_degree}**")
+    st.write(f"*{edu_school}* - {edu_completion_date}")
 
-    # Skills section
-    if skills:
-        st.write("## Skills")
-        skills_list = skills.split(", ")
-        st.write(", ".join([f"`{skill.strip()}`" for skill in skills_list]))
+elif selected_page == "Skills":
+    st.title("Skills")
+    st.write(", ".join(skills))
 
-    # Projects section
-    if project_name and project_description:
-        st.write("## Projects")
-        st.write(f"**{project_name}**")
-        st.write(project_description)
+elif selected_page == "Projects":
+    st.title("Projects")
+    st.write(f"**{project_name}**")
+    st.write(project_description)

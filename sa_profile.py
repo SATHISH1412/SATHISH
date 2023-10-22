@@ -14,7 +14,7 @@ summary = st.text_area("Professional Summary")
 
 # Experience section
 st.header("Experience")
-exp_job_title = st.text_input("Job Title")
+exp_job_title = st.text_input("Job Title New")
 exp_company = st.text_input("Company")
 exp_start_date = st.date_input("Start Date")
 exp_end_date = st.date_input("End Date")

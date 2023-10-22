@@ -10,7 +10,7 @@ email = "sathish121393@gmail.com"
 phone = "+91 90 4326 1993"
 linkedin = "[Your LinkedIn Profile](https://www.linkedin.com/in/nexs/)"
 github = "[Your GitHub Profile](https://github.com/SATHISH1412)"
-summary = (f"I am a Senior Developer with expertise in the Amazon Web Services cloud, \n 
+summary = (f"I am a Senior Developer with expertise in the Amazon Web Services cloud,
            using the CDK, Python, and CFT to construct infrastructure at various levels, 
            as well as additional DevOps technologies such as Gitlab CICD, ArgoCD, Splunk,
            Dynatrace, OpenShift, and so on....As well as the development of streamlit apps.")

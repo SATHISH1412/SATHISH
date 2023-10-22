@@ -8,23 +8,23 @@ full_name = "Sathish Kumar Rajedran"
 job_title = "Sr Developer - I"
 email = "sathish121393@gmail.com"
 phone = "+91 90 4326 1993"
-linkedin = "[Your LinkedIn Profile](https://www.linkedin.com/in/nexs/)"
-github = "[Your GitHub Profile](https://github.com/SATHISH1412)"
+linkedin = "[LinkedIn](https://www.linkedin.com/in/nexs/)"
+github = "[GitHub](https://github.com/SATHISH1412)"
 summary = "I am a Senior Developer with expertise in the Amazon Web Services cloud, using the CDK, Python, and CFT to construct infrastructure at various levels, as well as additional DevOps technologies such as Gitlab CICD, ArgoCD, Splunk, Dynatrace, OpenShift, and so on....As well as the development of streamlit apps."
 
 # Experience section
-exp_job_title = "Job Title"
-exp_company = "Company Name"
-exp_date = "Month Year - Month Year"
+exp_job_title = "Senior Developer - I"
+exp_company = "Delta Air Lines"
+exp_date = "04 April 2023 - Present"
 exp_description = "Description of your role and responsibilities."
 
 # Education section
-edu_degree = "Degree"
+edu_degree = ""
 edu_school = "School/University Name"
-edu_completion_date = "Year of Completion"
+edu_completion_date = "2015"
 
 # Skills section
-skills = ["Skill 1", "Skill 2", "Skill 3"]  # List of your skills
+skills = ["AWS", "Python", "DevOps"]  # List of your skills
 
 # Projects section
 project_name = "Project Name"

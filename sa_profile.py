@@ -1,8 +1,8 @@
 import streamlit as st
 
 # Streamlit app title and description
-st.title("User Profile App")
-st.write("Enter your information below:")
+st.title("Sathish Kumar Rajendran")
+st.write("Sr Developer - I | AWS Community Builder")
 
 # User input fields
 name = st.text_input("Name")

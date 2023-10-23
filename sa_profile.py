@@ -3,6 +3,17 @@ import streamlit as st
 # Sidebar navigation
 selected_page = st.sidebar.radio("Navigation", ["Profile", "Experience", "Education", "Skills", "Projects"])
 
+page_bg_img = '''
+<style>
+.stApp {
+background-image: url("https://welcome1412.s3.amazonaws.com/pexels-leonardo-rossatti-2612650.jpg");
+background-size: cover;
+}
+</style>
+'''
+
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
 # Personal and professional information
 full_name = "Sathish Kumar Rajedran"
 job_title = "Sr Developer - I"

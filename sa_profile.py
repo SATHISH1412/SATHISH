@@ -11,6 +11,7 @@ background-size: cover;
 }
 </style>
 '''
+
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # Personal and professional information
@@ -42,7 +43,6 @@ project_description = "Description of the project."
 
 # Display selected page content
 if selected_page == "Profile":
-    st.title("My Professional Profile")
     st.write(f"# {full_name}")
     st.write(f"**Job Title:** :blue[{job_title}]")
     st.write(f"**Email:** {email}")
